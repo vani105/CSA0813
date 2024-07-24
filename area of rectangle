@@ -1,0 +1,7 @@
+l=4
+b=6
+area of rec=l*b
+SyntaxError: invalid syntax
+area=l*b
+print(area)
+24
