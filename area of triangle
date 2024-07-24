@@ -1,0 +1,9 @@
+a=3
+       
+b=4
+       
+area=0.5*a*b
+       
+print(area)
+       
+6.0
