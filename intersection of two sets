@@ -1,0 +1,4 @@
+s1={'apple','banana'}
+s2={'apple','banana','kiwi'}
+s1.intersection(s2)
+print(s1)
