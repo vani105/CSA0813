@@ -1,0 +1,3 @@
+set1={'apple','banana'}
+set2={'kiwi','apple'}
+print(set1|set2)
