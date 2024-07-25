@@ -1,0 +1,9 @@
+p=eval(input("enter the p"))
+enter the p10000
+t=eval(input("enter the t"))
+enter the t2
+r=eval(input("enter the r"))
+enter the r5
+s=(p*t*r)/100
+print(s)
+1000.0
