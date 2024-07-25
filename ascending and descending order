@@ -1,0 +1,5 @@
+a=[15,3,2,7,4,8,9]
+a.sort()
+print("sorted of a is",a)
+a.sort(reverse='true')
+print(a)
