@@ -1,0 +1,12 @@
+p=eval(input("enter the p"))
+enter the p1000
+r=eval(input("enter the r"))
+enter the r5
+n=eval(input("enter the n"))
+enter the n3
+t=eval(input("enter the t"))
+enter the t3
+s=(1+r/n)**(n*t)
+ci=p*s-p
+print(ci)
+6817967.027384044
