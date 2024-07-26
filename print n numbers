@@ -1,0 +1,4 @@
+n=1
+m=10
+for i in range(n,m+1)
+ print(i)
