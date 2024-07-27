@@ -1,0 +1,7 @@
+n=chr(input("enter the instruction"))
+if 'red':
+ print("stop")
+elif 'yellow':
+ print("ready")
+elif 'green':
+ print("go")
