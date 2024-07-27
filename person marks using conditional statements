@@ -1,0 +1,5 @@
+marks=int(input("enter the marks"))
+if 'he belongg to a sports category':
+        marks=marks+5
+        print(marks)
+
