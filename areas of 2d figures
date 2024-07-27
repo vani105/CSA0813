@@ -1,0 +1,15 @@
+def area(r):
+    return 3.14*r*r
+def area1(l,b):
+    return l*b
+def area2(a,h):
+    return 0.5*a*h
+
+n=int(input("enter the value"))
+n1=int(input("enter the value"))
+n2=int(input("enter the value"))
+n3=int(input("enter the value"))
+n4=int(input("enter the value"))
+print("area of circle {} is {}",area(n))
+print("area of rectangle {} is {}",area1(n1,n2))
+print("area of triangle {} is {}",area2(n3,n4))
