@@ -1,0 +1,11 @@
+a=3
+b=4
+c=2
+d=b**2-4*a*c
+if d==0:
+    print("the roots are real,equal",d)
+elif d>0:
+    print("the roots are real,distinct",d)
+else:
+    print("the roots are complex,distinct",d)
+
