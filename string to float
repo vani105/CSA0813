@@ -1,0 +1,3 @@
+n='33.28'
+num=(float(n))
+print(num)
