@@ -1,0 +1,5 @@
+def tuple_to_list(list):
+    return list(tuple)
+tuple=(1,2,3,4,5)
+output_list=tuple_to_list(list)
+print(output_list)
