@@ -1,0 +1,16 @@
+string="excellence"
+import string
+print(sting.punctuation)
+!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+print(string.digits)
+0123456789
+print(string.printable)
+0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ 	
+
+
+print(string.capwords)
+<function capwords at 0x0000023785BF5260>
+print(string.hexdigits)
+0123456789abcdefABCDEF
+print(string.octdigits)
+01234567
