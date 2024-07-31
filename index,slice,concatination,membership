@@ -1,0 +1,18 @@
+a='HELLO'
+print(a[0])
+print(a[-1])
+
+print(a[0:4])
+print(a[:3])
+print(a[0:])
+
+a='save'
+b='earth'
+print(a+b)
+
+a="saveetha"
+print(3*a)
+
+s="self"
+'s' in s
+print("true")
