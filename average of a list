@@ -1,0 +1,5 @@
+n = [1, 2, 3, 4, 5]
+totalsum = sum(n)
+count=len(n)
+average=totalsum/count
+print(average)
