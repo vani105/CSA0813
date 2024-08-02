@@ -1,0 +1,8 @@
+def solid_square(rows):
+    for i in range(1,rows):
+        for j in range(1,rows+1):
+            print("",end="")
+        print()
+
+a=int(input("enter the rows"))
+solid_square(a)
