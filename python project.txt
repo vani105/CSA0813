@@ -1,0 +1,54 @@
+import numpy as np
+import pandas as pd
+
+# Simulate historical data for simplicity
+def generate_historical_data(num_warehouses, num_months):
+    np.random.seed(0)
+    data = {}
+    for warehouse in range(num_warehouses):
+        data[f'warehouse_{warehouse}'] = np.random.poisson(lam=100, size=num_months)
+    return pd.DataFrame(data)
+
+# Forecast demand using a simple moving average
+def forecast_demand(historical_data, window_size):
+    return historical_data.rolling(window=window_size).mean().iloc[-1]
+
+# Calculate reorder points based on forecasted demand and lead time
+def calculate_reorder_points(forecasted_demand, lead_time):
+    return forecasted_demand * lead_time
+
+# Distribute stock based on forecasted demand
+def distribute_stock(total_stock, forecasted_demand):
+    proportions = forecasted_demand / forecasted_demand.sum()
+    return total_stock * proportions
+
+# Main function to run the inventory management system
+def main():
+    num_warehouses = 3
+    num_months = 12
+    lead_time = 2  # in months
+    total_stock = 1000
+
+    # Generate historical demand data
+    historical_data = generate_historical_data(num_warehouses, num_months)
+    print("Historical Data:")
+    print(historical_data)
+
+    # Forecast demand for the next period
+    window_size = 3
+    forecasted_demand = forecast_demand(historical_data, window_size)
+    print("\nForecasted Demand:")
+    print(forecasted_demand)
+
+    # Calculate reorder points
+    reorder_points = calculate_reorder_points(forecasted_demand, lead_time)
+    print("\nReorder Points:")
+    print(reorder_points)
+
+    # Distribute stock
+    distributed_stock = distribute_stock(total_stock, forecasted_demand)
+    print("\nDistributed Stock:")
+    print(distributed_stock)
+
+if __name__ == "__main__":
+    main()
